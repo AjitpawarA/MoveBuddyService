@@ -17,6 +17,12 @@ public class CustomerController {
     @Autowired
     private CustomerService customerservice;
 
+    
+    @GetMapping("/hi")
+    public void hi() {
+    	System.out.println("hi");
+    }
+    
     @PostMapping("/registercustomer")
     public ResponseStructure<String> register(@RequestBody RegisterCustomerDTO dto) {
         return customerservice.saveCustomer(dto);
