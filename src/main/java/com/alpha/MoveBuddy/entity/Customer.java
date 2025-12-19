@@ -116,7 +116,7 @@ public class Customer {
 		this.bookinglist = bookinglist;
 	}
 
-	public Customer(String name, int age, String gender, long mobileNo, String emailId, String currentLoc,
+	public Customer(String name, int age, String gender, long mobileNo, String emailId, String currentLoc, int penality,
 			boolean bookingflag, List<Booking> bookinglist) {
 		super();
 		this.name = name;
@@ -125,6 +125,7 @@ public class Customer {
 		this.mobileNo = mobileNo;
 		this.emailId = emailId;
 		this.currentLoc = currentLoc;
+		this.penality = penality;
 		this.bookingflag = bookingflag;
 		this.bookinglist = bookinglist;
 	}
